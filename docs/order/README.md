@@ -82,6 +82,9 @@ Order가 확정되지 않았다면, 스펙 문서 수정이나 코드 작성 등
 **이 단계에서는 `Report`를 만들지 않고 `Progress` 파일만 사용합니다.**
 
 1. **Create Progress**: 작업 착수 시 `_templates/progress.json`을 복사하여 생성합니다.
+
+* `order.json`의 핵심 요구사항을 `constraints_mirror` 필드에 복사하여 작업 내내 참고합니다.
+
 2. **Spec First Update**:
 
 * 코드를 작성하기 전에, **`docs/specs/` 내의 관련 문서를 먼저 업데이트**합니다.
@@ -92,6 +95,9 @@ Order가 확정되지 않았다면, 스펙 문서 수정이나 코드 작성 등
 
 * 버그나 수정 사항 발생 시, `Progress` 파일의 `logs`에 기록하고 작업을 반복합니다.
 * 이 과정에서 `Order`는 수정하지 않으며, `Report`는 절대 생성하지 않습니다.
+
+> **💡 Tip: Log Management**
+> `progress.json`의 `logs`가 너무 길어지면(20항목 이상), AI는 스스로 지난 로그를 요약하거나 중요한 에러 메시지만 남기고 정리하여 컨텍스트 낭비를 막아야 합니다.
 
 ---
 
