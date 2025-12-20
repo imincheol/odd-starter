@@ -10,9 +10,9 @@
 어떠한 환경에서도 터미널에서 아래 명령어를 실행하면, 즉시 ODD 시스템이 구축됩니다.
 
 ```bash
-curl -sL https://raw.githubusercontent.com/imincheol/odd-starter/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/imincheol/odd-starter/main/install_odd.sh | bash
 ```
-*(설치 후에는 `.odd/`, `docs/` 폴더가 생성됩니다. 사용자의 기존 데이터는 안전하게 보존됩니다.)*
+*(설치 후에는 `docs/` 폴더가 생성되며, 사용자의 기존 데이터는 안전하게 보존됩니다.)*
 
 ### ⚠️ 필수 설정 (Required Setup)
 프로젝트 루트에 있는 **`AGENTS.md`** 파일의 내용을 복사하여, 사용 중인 AI(ChatGPT, Claude, Cursor 등)의 **System Prompt(Custom Instructions)**에 붙여넣으세요.

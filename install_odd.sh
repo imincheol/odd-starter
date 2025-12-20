@@ -22,8 +22,6 @@ fetch_system_file() {
 }
 
 # 주요 시스템 파일 강제 대조 (항상 최신 버전 유지)
-
-fetch_system_file "AGENTS.md" --update
 fetch_system_file ".odd/_templates/ATLAS.md" --update
 fetch_system_file ".odd/_templates/history.md" --update
 fetch_system_file ".odd/_templates/roadmap.md" --update
@@ -64,3 +62,9 @@ for dir in docs/specs/*; do
 done
 
 echo "✅ ODD v5.7 시스템이 준비되었습니다."
+
+# 4. [Cleanup] 설치용 임시 파일 및 스크립트 삭제
+rm -rf .odd
+if [ -f "$0" ]; then
+    rm -- "$0"
+fi
