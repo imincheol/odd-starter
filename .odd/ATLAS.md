@@ -1,4 +1,5 @@
 # Project Atlas: The Single Source of Truth
+> **ODD System Version: v0.7.3**
 
 이 문서는 **ODD(Order-Driven Development) 시스템의 유일한 나침반(Map)**입니다.
 모든 에이전트는 작업 시작 시 이 문서를 먼저 참조하여 현재 위치와 규칙을 확인하십시오.

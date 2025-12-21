@@ -3,6 +3,7 @@ type: book
 domain: [Domain Name]
 reference_count: 0
 last_updated: YYYY-MM-DD
+odd_version: "v0.7.3"
 ---
 
 # [Domain Name]: [Sub-title]

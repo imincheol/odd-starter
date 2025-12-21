@@ -1,5 +1,6 @@
 {
     "version": "v1.0.0",
+    "odd_version": "v0.7.3",
     "order_id": "YYYYMMDD_SEQ_TaskName",
     "target_version": "v1.0.1",
     "status": "IN_PROGRESS",

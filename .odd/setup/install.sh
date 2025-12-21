@@ -1,5 +1,5 @@
 #!/bin/bash
-# ODD Starter v0.7.2 Installer
+# ODD Starter v0.7.3 Installer
 
 REPO_URL="https://raw.githubusercontent.com/imincheol/odd-starter/main"
 
@@ -108,7 +108,7 @@ fi
 CURRENT_YM=$(date +"%Y/%m")
 mkdir -p "docs/odd/history/$CURRENT_YM"
 
-echo "✅ ODD v0.7.1 시스템이 준비되었습니다."
+echo "✅ ODD v0.7.3 시스템이 준비되었습니다."
 echo "👉 docs/odd/ATLAS.md 를 열어 새로운 가이드를 확인하세요."
 
 # 4. [System Install] 설치 스크립트 권한 설정 (For Update)

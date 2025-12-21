@@ -2,7 +2,8 @@
 type: book
 domain: Payment
 reference_count: 5
-last_updated: 2025-12-21
+last_updated: 2024-12-20
+odd_version: "v0.7.3"
 ---
 
 # Payment: 결제 시스템 가이드

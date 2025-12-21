@@ -1,4 +1,6 @@
 {
+    "odd_version": "v0.7.3",
+    "odd_version": "v0.7.3",
     "order_id": "YYYYMMDD_SEQ_TaskName",
     "type": "feature",
     "priority": "high",

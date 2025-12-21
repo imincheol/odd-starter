@@ -1,4 +1,4 @@
-# Roadmap Schema & Rules
+# Roadmap Schema & Rules (ODD v0.7.3)
 
 ## 1. 개요
 `roadmap.md`는 프로젝트의 현재 상태를 보여주는 **스냅샷(Snapshot)**입니다.

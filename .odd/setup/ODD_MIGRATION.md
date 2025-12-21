@@ -1,6 +1,6 @@
 # 🔄 ODD Migration Protocol (마이그레이션 가이드)
 
-> **ODD Standard Protocol v0.7.2**
+> **ODD Standard Protocol v0.7.3**
 >
 > **For AI Agent:**
 > 사용자가 이 문서를 제공하면, 당신은 **"ODD 시스템 관리자"**로서 기존 프로젝트를 ODD 체계에 맞게 정리(Refactoring/Organizing)해야 합니다.
