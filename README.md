@@ -10,9 +10,31 @@
 어떠한 환경에서도 터미널에서 아래 명령어를 실행하면, 즉시 ODD 시스템이 구축됩니다.
 
 ```bash
-curl -sL https://raw.githubusercontent.com/imincheol/odd-starter/main/install_odd.sh | bash
+curl -sL https://raw.githubusercontent.com/imincheol/odd-starter/main/.odd/setup/install.sh | bash
 ```
 *(설치 후에는 `docs/` 폴더가 생성되며, 사용자의 기존 데이터는 안전하게 보존됩니다.)*
+*(추후 시스템 업데이트 시에는 `docs/odd/setup/install.sh`를 실행하세요.)*
+
+```
+docs/
+├── odd/                # 🧠 Operation & Memory
+│   ├── ATLAS.md        #    - Single Source of Truth
+│   ├── roadmap.md      #    - Project Snapshot
+│   ├── tasks/          #    - Working Memory (Active Orders)
+│   ├── books/          #    - Long-term Memory (Domain Knowledge)
+│   ├── history/        #    - Chronicles (Daily Logs)
+│   ├── archive/        #    - Completed Memory (yyyy/mm/dd)
+│   └── setup/          #    - System Protocols
+│       ├── ODD_BOOTSTRAP.md
+│       ├── ODD_MIGRATION.md
+│       └── install.sh  #    - Update Script
+│
+└── specs/              # 🏛️ Product Specifications
+    ├── README.md       #    - Product Overview
+    ├── 1_planning/     #    - Requirements
+    ├── 2_design/       #    - UI/UX
+    └── ...             #    - Markup, Development
+```
 
 ### ⚠️ 필수 설정 (Required Setup)
 프로젝트 루트에 있는 **`docs/odd/ATLAS.md`** 파일의 내용을 복약하여, 사용 중인 AI(ChatGPT, Claude, Cursor 등)의 **System Prompt(Custom Instructions)**에 붙여넣으세요.
@@ -42,8 +64,9 @@ flowchart LR
 #### 1️⃣ 초기 구축 (BOOTSTRAP)
 아무것도 없는 상태에서 시작할 때, 기획안을 기준으로 시스템을 구축합니다.
 
-> **💬 초기 구축 프롬프트:**  
-> "내가 가진 기획안들을 `docs/specs/` 하위의 단계별 `README.md`로 옮겨서 정리해줘. 그리고 이 스펙을 분석해서 `docs/odd/roadmap.md`에 우선순위대로 등록해줘."
+> **💡 Smart Start:**  
+> **`docs/odd/setup/ODD_BOOTSTRAP.md`** 파일을 현재 채팅창에 업로드하거나 내용을 복사해서 AI에게 건네주세요.  
+> AI가 프로젝트 인터뷰부터 스펙 정리, 로드맵 수립까지 자동으로 진행해줍니다.
 
 #### 2️⃣ 실전 개발 (EXECUTION)
 
@@ -92,17 +115,12 @@ flowchart LR
     F --> G
 ```
 
-#### 1️⃣ 오더 정리 (MIGRATION - ORDER)
-현재 진행 중인 작업 목록을 시스템화합니다.
+#### 1️⃣ 자동 마이그레이션 (Auto Migration)
+기존의 복잡한 코드와 문서를 한번에 ODD 시스템으로 변환합니다.
 
-> **💬 오더 정리 프롬프트:**  
-> "현재 진행 중인 작업들과 커밋 로그를 분석해서 `docs/odd/roadmap.md`를 구성하고, 미완료된 작업들은 `docs/odd/tasks/`에 오더(Order)로 만들어줘."
-
-#### 2️⃣ 지식 정리 (MIGRATION - LIBRARY)
-기존의 파편화된 정보를 지식으로 변환합니다.
-
-> **💬 지식 정리 프롬프트:**  
-> "기존의 기획서나 코드 주석을 분석해서 `docs/odd/books/`에 도메인별 지식으로 정리해줘. 그리고 `ATLAS.md`에 **새로운 책(Book) 목록만** 등록해줘."
+> **💡 Smart Migration:**  
+> **`docs/odd/setup/ODD_MIGRATION.md`** 파일을 현재 채팅창에 업로드하거나 내용을 복사해서 AI에게 건네주세요.  
+> AI가 현재 프로젝트의 **코드 분석, 기술 스택 파악, 로드맵 현행화**를 일괄적으로 수행합니다.
 
 ---
 
