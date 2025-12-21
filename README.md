@@ -24,10 +24,10 @@ docs/
 │   ├── books/          #    - Long-term Memory (Domain Knowledge)
 │   ├── history/        #    - Chronicles (Daily Logs)
 │   ├── archive/        #    - Completed Memory (yyyy/mm/dd)
-│   └── setup/          #    - System Protocols
-│       ├── ODD_BOOTSTRAP.md
-│       ├── ODD_MIGRATION.md
-│       └── install.sh  #    - Update Script
+│   └── setup/          # │   │   ├── setup/
+│   │   │   ├── ODD_INIT.md
+│   │   │   ├── ODD_UPDATE.md
+│   │   │   └── install.sh  #    - Update Script
 │
 └── specs/              # 🏛️ Product Specifications
     ├── README.md       #    - Product Overview
