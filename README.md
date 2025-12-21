@@ -1,7 +1,7 @@
-# 🚀 ODD Starter Kit (v0.7.1 Standard Edition)
+# 🚀 ODD Starter Kit (v0.7.2 Standard Edition)
 
 > **"AI 개발의 기억 상실증을 치료하라."**  
-> Order Driven Development (ODD) v0.7.1: Library & Atlas Framework
+> Order Driven Development (ODD) v0.7.2: Library & Atlas Framework
 
 ---
 

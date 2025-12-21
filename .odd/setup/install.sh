@@ -1,5 +1,5 @@
 #!/bin/bash
-# ODD Starter v0.7.1 Installer
+# ODD Starter v0.7.2 Installer
 
 REPO_URL="https://raw.githubusercontent.com/imincheol/odd-starter/main"
 
