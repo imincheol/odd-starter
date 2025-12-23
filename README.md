@@ -10,7 +10,7 @@
 어떠한 환경에서도 터미널에서 아래 명령어를 실행하면, 즉시 ODD 시스템이 구축됩니다.
 
 ```bash
-curl -sL https://raw.githubusercontent.com/imincheol/odd-starter/main/.odd/setup/install.sh | bash
+curl -sL https://raw.githubusercontent.com/imincheol/odd-starter/main/odd/setup/install.sh | bash
 ```
 *(설치 후에는 `docs/` 폴더가 생성되며, 사용자의 기존 데이터는 안전하게 보존됩니다.)*
 *(추후 시스템 업데이트 시에는 `docs/odd/setup/install.sh`를 실행하세요.)*

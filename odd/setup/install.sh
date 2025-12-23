@@ -8,10 +8,11 @@ echo "🚀 ODD 시스템 동기화를 시작합니다..."
 # 1. [System] 필수 시스템 파일 존재 확인 및 원격 다운로드
 fetch_system_file() {
     FILE_PATH=$1
+    REMOTE_PATH="${FILE_PATH/.odd/odd}"
     if [ ! -f "$FILE_PATH" ] || [[ "$*" == *"--update"* ]]; then
         echo "📥 [시스템] $FILE_PATH 동기화 중..."
         mkdir -p "$(dirname "$FILE_PATH")"
-        if curl -sL "$REPO_URL/$FILE_PATH" -o "${FILE_PATH}.tmp"; then
+        if curl -sL "$REPO_URL/$REMOTE_PATH" -o "${FILE_PATH}.tmp"; then
             mv "${FILE_PATH}.tmp" "$FILE_PATH"
         else
             echo "⚠️  [경고] $FILE_PATH 다운로드 실패. 기존 파일을 유지하거나 건너뜁니다."
