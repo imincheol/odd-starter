@@ -1,5 +1,5 @@
 {
-    "odd_version": "v0.8.0",
+    "odd_version": "v0.9.0",
     "order_id": "YYYYMMDD_SEQ_TaskName",
     "completed_at": "YYYY-MM-DD HH:MM:ss",
     "summary": "High-level summary of work done",

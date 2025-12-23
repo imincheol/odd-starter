@@ -1,5 +1,5 @@
 # Project Atlas: The Single Source of Truth
-> **ODD System Version: v0.8.0**
+> **ODD System Version: v0.9.0**
 
 이 문서는 **ODD(Order-Driven Development) 시스템의 헌법이자 나침반**입니다.
 이 프로젝트의 목표는 **"AI의 기억 상실증을 치료하고, 지속 가능한 개발 기억을 만드는 것"**입니다.
