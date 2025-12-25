@@ -1,0 +1,11 @@
+{
+    "order_id": "20251225_03_Maintain_Empty_Dirs",
+    "status": "COMPLETED",
+    "result": "SUCCESS",
+    "summary": "빈 폴더가 Git과 설치 과정에서 누락되는 문제를 해결하기 위해 .gitkeep을 추가하고 install.sh 로직을 수정했습니다.",
+    "artifacts": [
+        "odd/tasks/active/.gitkeep",
+        "odd/setup/install.sh"
+    ],
+    "lessons_learned": "사용자에게 배포될 때는 불필요한 파일(.gitkeep)을 제거해주는 UX적 배려가 필요하다."
+}
