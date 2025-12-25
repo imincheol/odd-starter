@@ -1,0 +1,29 @@
+{
+    "version": "v1.0.0",
+    "odd_version": "v0.9.1",
+    "order_id": "20251225_06_System_Update_v0.9.1",
+    "target_version": "v0.9.1",
+    "status": "IN_PROGRESS",
+    "updated_at": "2025-12-25",
+    "context": {
+        "related_specs": [],
+        "related_books": []
+    },
+    "current_step": 1,
+    "steps": [
+        {
+            "step": 1,
+            "desc": "Rename ATLAS.md to ATLAS_TEMPLATE.md and Update Policy",
+            "status": "pending",
+            "logs": [
+                "Renamed odd/ATLAS.md -> odd/ATLAS_TEMPLATE.md"
+            ]
+        },
+        {
+            "step": 2,
+            "desc": "Refine docs/odd content and enforce JSON format",
+            "status": "pending",
+            "logs": []
+        }
+    ]
+}
