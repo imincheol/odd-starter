@@ -36,7 +36,10 @@
 
 ### Step 2. 과제 수행 (Progress)
 - **학생**: 승인된 오더에 따라 `tasks/_template/progress.json`을 생성하고 작업을 시작합니다.
-- **규칙**: 작업 중간중간 로그를 남기고, 버전을 명시합니다. 막히면 **사서**에게 도메인 지식(`books/`)을 요청하십시오.
+- **규칙**:
+    1. 작업 시작 전, `order.json`의 `context`를 참고하여 `progress.json`의 `related_specs`와 `related_books`를 채웁니다.
+    2. 세션이 끊겼다가 재개할 때는 반드시 `related_specs`와 `related_books`의 문서들을 먼저 읽어 맥락(Context)을 복구합니다.
+    3. 작업 중간중간 로그를 남기고, 버전을 명시합니다. 막히면 **사서**에게 도메인 지식(`books/`)을 요청하십시오.
 
 ### Step 3. 졸업 및 기록 (Report & Archive)
 - **학생**: 작업이 끝나면 `report.json`을 작성하여 제출합니다.

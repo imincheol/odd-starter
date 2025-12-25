@@ -1,0 +1,11 @@
+{
+    "order_id": "20251225_02_ImproveContextRetention",
+    "status": "COMPLETED",
+    "result": "SUCCESS",
+    "summary": "세션 복구 시 컨텍스트 유지를 위해 progress.json에 context 필드를 추가하고 ATLAS.md 워크플로우를 보강했습니다.",
+    "artifacts": [
+        "odd/tasks/_template/progress.json",
+        "odd/ATLAS.md"
+    ],
+    "lessons_learned": "AI와의 협업에서 가장 큰 병목은 '기억의 단절'이며, 이를 시스템적으로 보완하는 장치(명시적 참조 기록)가 필수적이다."
+}
