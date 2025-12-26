@@ -56,8 +56,8 @@ docs/
 3. **Execution**: Create an Order -> Progress -> Report -> Archive.
 
 **[한국어]**
-1. **초기 설정**: 설치 스크립트를 실행합니다.
-2. **첫 주문**: `docs/odd/setup/ODD_INIT.md` 내용을 복사해서 AI에게 건네주세요.
+1. **초기 설정**: 설치 스크립트를 실행합니다. (자동으로 `docs/odd/tasks/active/000_bootstrap.md` 오더 생성)
+2. **첫 작업 시작**: AI 에이전트에게 전체 파일 구조를 스캔하게 한 뒤, 생성된 오더에 따라 작업을 시작하라고 지시하세요.
 3. **실전 개발**: 오더 생성 -> 작업 수행 -> 리포트 제출 -> 아카이브 순으로 진행합니다.
 
 ### 🏙️ Existing Project (기존 프로젝트)
@@ -67,8 +67,9 @@ docs/
 2. **Migration**: Share `docs/odd/setup/ODD_UPDATE.md` with your AI agent to analyze and migrate your project context into ODD.
 
 **[한국어]**
-1. **업데이트**: 프로젝트 루트에서 설치 스크립트를 실행합니다.
-2. **이식(Migration)**: `docs/odd/setup/ODD_UPDATE.md` 내용을 AI에게 주면, 기존 코드를 분석하여 로드맵을 현행화해줍니다.
+1. **업데이트**: 프로젝트 루트에서 설치 스크립트를 실행합니다. (자동으로 `000_migration_v0.9.4.md` 오더 생성)
+2. **이식(Migration)**: AI에게 활성화된 마이그레이션 오더를 확인하고, `ODD_UPDATE.md` 프로토콜에 따라 프로젝트를 정비하라고 지시하세요.
+3. **현행화**: 기존 코드를 분석하여 로드맵과 맵(Atlas)을 현행화해줍니다.
 
 ---
 

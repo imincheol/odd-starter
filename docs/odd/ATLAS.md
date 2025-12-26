@@ -13,6 +13,22 @@ All agents must **Load and Read** this document at the start of every session to
 
 ---
 
+## 🏗️ Project Metadata (Context)
+
+**[English]**
+- **Project Name**: ODD Starter Kit
+- **Core Goal**: A standardized framework for Order-Driven Development.
+- **Current Version**: v0.9.4
+- **Primary Directories**: `docs/odd/` (Memory), `docs/specs/` (Specs), `odd-template/` (Source).
+
+**[한국어]**
+- **프로젝트 명**: ODD Starter Kit
+- **핵심 목표**: 오더 기반 개발(Order-Driven Development) 체계의 표준 프레임워크 제공.
+- **현재 버전**: v0.9.4
+- **주요 폴더**: `docs/odd/` (기억), `docs/specs/` (스펙), `odd-template/` (배포 소스).
+
+---
+
 ## 🎭 Agent Personas (Roles & Attitude)
 
 **[English]**

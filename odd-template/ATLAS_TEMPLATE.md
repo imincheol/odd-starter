@@ -13,6 +13,22 @@ All agents must **Load and Read** this document at the start of every session to
 
 ---
 
+## 🏗️ Project Metadata (Context)
+
+**[English]**
+- **Project Name**: {{PROJECT_NAME}}
+- **Core Goal**: {{PROJECT_GOAL}}
+- **Current Version**: v0.9.4
+- **Primary Directories**: `docs/odd/` (Memory), `docs/specs/` (Specs).
+
+**[한국어]**
+- **프로젝트 명**: {{PROJECT_NAME}}
+- **핵심 목표**: {{PROJECT_GOAL}}
+- **현재 버전**: v0.9.4
+- **주요 폴더**: `docs/odd/` (기억), `docs/specs/` (스펙).
+
+---
+
 ## 🎭 Agent Personas (Roles & Attitude)
 
 **[English]**
