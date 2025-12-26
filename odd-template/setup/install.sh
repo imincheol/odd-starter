@@ -93,6 +93,71 @@ if [ -f "docs/odd/setup/install.sh" ]; then
     chmod +x "docs/odd/setup/install.sh"
 fi
 
+# 5. [Auto-Order] 초기 오더 생성 (AI 에이전트 가이드용)
+create_initial_order() {
+    ORDER_DATE=$(date +"%Y-%m-%d")
+    
+    if [ "$IS_UPDATE" = true ]; then
+        ORDER_FILE="docs/odd/tasks/active/000_migration_v0.9.3.md"
+        if [ ! -f "$ORDER_FILE" ]; then
+            cat <<EOF > "$ORDER_FILE"
+---
+id: "000_migration_v0.9.3"
+type: "setup"
+status: "approved"
+priority: "high"
+created_at: "$ORDER_DATE"
+summary: "ODD 시스템 v0.9.3 업데이트 및 마이그레이션 수행"
+context:
+  - "docs/odd/ATLAS.md"
+  - "docs/odd/setup/ODD_UPDATE.md"
+---
+
+# 📋 Order: 시스템 마이그레이션 (v0.9.3)
+
+## 1. Context & Objective (배경 및 목표)
+ODD 시스템이 v0.9.3으로 업데이트되었습니다. 최신 규칙과 구조를 프로젝트에 반영해야 합니다.
+
+## 2. Todo List (할 일)
+- [ ] docs/odd/setup/ODD_UPDATE.md 프로토콜 정독
+- [ ] ATLAS.md 및 Roadmap.md 현행화 (v0.9.3 기준)
+- [ ] 구버전 레거시 파일 정리 및 지식 이관(Books) 확인
+EOF
+            echo "📝 업데이트 마이그레이션 오더가 생성되었습니다: $ORDER_FILE"
+        fi
+    else
+        ORDER_FILE="docs/odd/tasks/active/000_bootstrap.md"
+        if [ ! -f "$ORDER_FILE" ]; then
+            cat <<EOF > "$ORDER_FILE"
+---
+id: "000_bootstrap"
+type: "setup"
+status: "approved"
+priority: "high"
+created_at: "$ORDER_DATE"
+summary: "ODD 시스템 초기 구축 및 프로젝트 활성화"
+context:
+  - "docs/odd/ATLAS.md"
+  - "docs/odd/setup/ODD_INIT.md"
+---
+
+# 📋 Order: 시스템 초기화 및 부트스트랩
+
+## 1. Context & Objective (배경 및 목표)
+ODD 시스템이 신규 설치되었습니다. 프로젝트의 목표를 정의하고 개발 체계를 가동해야 합니다.
+
+## 2. Todo List (할 일)
+- [ ] docs/odd/setup/ODD_INIT.md 프로토콜 정독
+- [ ] 기획 인터뷰 및 스펙 문서화 (docs/specs/)
+- [ ] 프로젝트 로드맵 수립 및 첫 번째 개발 오더 준비
+EOF
+            echo "📝 초기 구축 부트스트랩 오더가 생성되었습니다: $ORDER_FILE"
+        fi
+    fi
+}
+
+create_initial_order
+
 echo "✨ 설치 및 업데이트가 완료되었습니다."
 
 if [ "$IS_UPDATE" = true ]; then
