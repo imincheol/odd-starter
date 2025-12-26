@@ -5,12 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.9.4] - 2025-12-26
+
+### Added
+- **Installer UX**: Added auto-detection of environment (New Install vs. Update).
+- **Automation**: Automatic generation of initial Setup/Migration Orders upon installation to guide AI agents immediately.
+
 ## [v0.9.3] - 2025-12-26
 
 ### Changed
 - **Archive System**: Finalized archive and roadmap management logic (separating Tasks/Roadmaps).
-- **History System**: Split history into **System** (technical) and **Domain** (policy/context) for better traceability.
-- **Sync**: Synchronized `odd-template` with the latest operational standards.
+- **History System**: Split history into **System** (technical) and **Domain** (policy/context).
+- **Integrity**: Synchronized all guide documents (`ODD_INIT`, `ODD_UPDATE`) to current version.
 
 ## [v0.9.2] - 2025-12-26
 

@@ -1,9 +1,9 @@
-# 🚀 ODD Starter Kit (v0.9.3 Standard Edition)
+# 🚀 ODD Starter Kit (v0.9.4 Standard Edition)
 
 > **[English] "Curing AI Amnesia in Software Development."**
 > **[한국어] "AI 개발의 기억 상실증을 치료하라."**
 >
-> **Order Driven Development (ODD) v0.9.3: Library & Atlas Framework**
+> **Order Driven Development (ODD) v0.9.4: Library & Atlas Framework**
 
 ---
 
