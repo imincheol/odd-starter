@@ -1,5 +1,5 @@
 #!/bin/bash
-# ODD Starter v0.9.3 Installer
+# ODD Starter v0.9.4 Installer
 
 # GitHub Repository Base URL
 # 'odd-template' 디렉토리에서 원본 파일을 가져옵니다.
@@ -12,7 +12,7 @@ if [ -f "docs/odd/ATLAS.md" ]; then
     IS_UPDATE=true
 fi
 
-echo "🚀 ODD 시스템 동기화 (v0.9.3)를 시작합니다..."
+echo "🚀 ODD 시스템 동기화 (v0.9.4)를 시작합니다..."
 
 # 1. [System] 필수 시스템 파일 존재 확인 및 원격 다운로드
 fetch_system_file() {
@@ -82,7 +82,7 @@ mkdir -p docs/odd/setup
 mkdir -p docs/specs/{0_origin,1_planning,2_design,3_markup,4_development}
 
 # 3. [User Data] 초기화 가이드
-echo "✅ ODD v0.9.3 시스템이 준비되었습니다."
+echo "✅ ODD v0.9.4 시스템이 준비되었습니다."
 
 # History Init
 CURRENT_YM=$(date +"%Y/%m")
@@ -98,29 +98,29 @@ create_initial_order() {
     ORDER_DATE=$(date +"%Y-%m-%d")
     
     if [ "$IS_UPDATE" = true ]; then
-        ORDER_FILE="docs/odd/tasks/active/000_migration_v0.9.3.md"
+        ORDER_FILE="docs/odd/tasks/active/000_migration_v0.9.4.md"
         if [ ! -f "$ORDER_FILE" ]; then
             cat <<EOF > "$ORDER_FILE"
 ---
-id: "000_migration_v0.9.3"
+id: "000_migration_v0.9.4"
 type: "setup"
 status: "approved"
 priority: "high"
 created_at: "$ORDER_DATE"
-summary: "ODD 시스템 v0.9.3 업데이트 및 마이그레이션 수행"
+summary: "ODD 시스템 v0.9.4 업데이트 및 마이그레이션 수행"
 context:
   - "docs/odd/ATLAS.md"
   - "docs/odd/setup/ODD_UPDATE.md"
 ---
 
-# 📋 Order: 시스템 마이그레이션 (v0.9.3)
+# 📋 Order: 시스템 마이그레이션 (v0.9.4)
 
 ## 1. Context & Objective (배경 및 목표)
-ODD 시스템이 v0.9.3으로 업데이트되었습니다. 최신 규칙과 구조를 프로젝트에 반영해야 합니다.
+ODD 시스템이 v0.9.4로 업데이트되었습니다. 최신 규칙과 구조를 프로젝트에 반영해야 합니다.
 
 ## 2. Todo List (할 일)
 - [ ] docs/odd/setup/ODD_UPDATE.md 프로토콜 정독
-- [ ] ATLAS.md 및 Roadmap.md 현행화 (v0.9.3 기준)
+- [ ] ATLAS.md 및 Roadmap.md 현행화 (v0.9.4 기준)
 - [ ] 구버전 레거시 파일 정리 및 지식 이관(Books) 확인
 EOF
             echo "📝 업데이트 마이그레이션 오더가 생성되었습니다: $ORDER_FILE"
@@ -161,7 +161,7 @@ create_initial_order
 echo "✨ 설치 및 업데이트가 완료되었습니다."
 
 if [ "$IS_UPDATE" = true ]; then
-    echo "🔄 [업데이트 완료] 시스템이 최신 버전(v0.9.3)으로 상향되었습니다."
+    echo "🔄 [업데이트 완료] 시스템이 최신 버전(v0.9.4)으로 상향되었습니다."
     echo "👉 변경 사항을 프로젝트에 반영하려면 docs/odd/setup/ODD_UPDATE.md 의 내용을 AI에게 전달하세요."
 else
     echo "🆕 [신규 설치 완료] ODD 시스템이 성공적으로 구축되었습니다."
@@ -169,4 +169,4 @@ else
 fi
 
 echo ""
-echo "💡 Tip: docs/odd/ATLAS.md 를 열어 새로운 규칙(v0.9.3)을 확인할 수도 있습니다."
+echo "💡 Tip: docs/odd/ATLAS.md 를 열어 새로운 규칙(v0.9.4)을 확인할 수도 있습니다."
