@@ -21,6 +21,7 @@
 - **`ATLAS.md`**: 현재 프로젝트의 헌법.
 - **`tasks/`**: 현재 진행 중인 오더들.
 - **`books/`**: 현재 프로젝트에 대한 지식(`domain`, `tech` 등).
+- **`archive/`**: 완료된 작업물 저장소 (`tasks/`, `roadmaps/`로 구분).
 
 ## 2. File Roles (파일 역할 정의)
 

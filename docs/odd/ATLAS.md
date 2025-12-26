@@ -62,6 +62,7 @@ Depending on the situation, you must act as one of the following three personas.
 ## ⚡ Workflow Protocol
 
 ### Step 1. Order (수강 신청)
+- **Strategy**: **Divide and Conquer**. If the task is too large, break it down into smaller, manageable Orders.
 - **Student**: Checks `tasks/roadmap.md`, then creates a markdown Order using `tasks/_template/order.md`.
 - **Professor**: Reviews if the Order matches specs and roadmap. (**No Code until Approved**)
 
@@ -96,7 +97,10 @@ Depending on the situation, you must act as one of the following three personas.
 - **Action**: **Append** new records. Answers "How did we get here?".
 
 ### 4. 📦 Archive (Storage) -> `./archive/`
-- Storage for completed Orders and Reports.
+- **Structure**:
+    - `tasks/yyyy/mm/dd/`: Completed Orders and Reports.
+    - `roadmaps/yyyy/`: Snapshots of past Roadmaps.
+- **Purpose**: To keep the active workspace clean while preserving all past efforts.
 
 ---
 
