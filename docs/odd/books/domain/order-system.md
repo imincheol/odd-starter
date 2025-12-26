@@ -27,6 +27,13 @@
     - 변경된 파일 목록 (Artifacts)
 - **중요성**: AI 세션이 끊겨도 이 파일을 읽으면 작업을 이어서 할 수 있습니다.
 
+### 📸 Roadmap Snapshot (로드맵 스냅샷)
+- **위치**: `docs/odd/history/roadmaps/YYYY/`
+- **규칙**:
+    - 주요 **마일스톤(Milestone)**이 끝날 때마다 현재의 `roadmap.md`를 스냅샷으로 저장합니다.
+    - 파일명 컨벤션: `YYYYMMDD_vX.X.X_description.md`
+    - 목적: 프로젝트의 계획이 어떻게 변해왔는지 궤적(Trajectory)을 추적하기 위함입니다.
+
 ### 🏁 Report (결과 보고서)
 - **파일명**: `report.md`
 - **역할**: "결과는 무엇인가?" (최종 산출물 + 회고)
