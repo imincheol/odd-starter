@@ -45,7 +45,7 @@ fetch_system_file "docs/odd/tasks/_template/progress.md" "$TEMPLATE_DIR/tasks/_t
 fetch_system_file "docs/odd/tasks/_template/report.md" "$TEMPLATE_DIR/tasks/_template/report.md" --update
 
 # --- Books (Library) ---
-fetch_system_file "docs/odd/books/README.md" "$TEMPLATE_DIR/books/README_TEMPLATE.md" --update
+fetch_system_file "docs/odd/books/README.md" "$TEMPLATE_DIR/books/README.md" --update
 fetch_system_file "docs/odd/books/general/policy-language.md" "$TEMPLATE_DIR/books/general/policy-language.md" --update
 fetch_system_file "docs/odd/books/general/overview.md" "$TEMPLATE_DIR/books/general/overview.md" --update
 fetch_system_file "docs/odd/books/domain/order-system.md" "$TEMPLATE_DIR/books/domain/order-system.md" --update

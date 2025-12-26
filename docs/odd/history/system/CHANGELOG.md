@@ -1,24 +1,39 @@
-# ODD Starter Kit Version History
+# Changelog
 
-## v0.9.1 (2025-12-26)
-### Major Updates
-- **ATLAS Templatization**: `odd/ATLAS.md`를 `ATLAS_TEMPLATE.md`로 전환하고, `order`, `progress`, `report` 템플릿을 JSON 포맷(`*.json`)으로 전면 변경하여 데이터 구조화 강화.
-- **Documentation Restructure**: 
-    - `specs` 디렉토리 위치를 `docs/specs`에서 `docs/odd/specs`로 명확히 정의.
-    - `books/README.md`, `specs/README.md` 등 네비게이션 가이드 문서 추가.
-- **Epoch Archive Policy**: 프로젝트 마일스톤(Epoch) 단위의 로드맵 백업 규칙을 `ATLAS`에 신설.
+All notable changes to this project will be documented in this file.
 
-### Features & Improvements
-- **Context Retention**: `progress.json` 템플릿과 워크플로우를 개선하여 작업 재개 시 참조했던 Spec/Book을 확인할 수 있게 함 (20251225_02_ImproveContextRetention).
-- **Dogfooding**: `docs/odd` 폴더를 통해 ODD Starter 프로젝트 자체를 ODD 시스템으로 관리하도록 설정.
-- **Empty Dirs Maintenance**: `.gitkeep` 파일 추가 및 설치 스크립트 수정을 통해 빈 폴더 구조가 Git과 설치본에서 유지되도록 보완.
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## v0.9.0 (2025-12-25)
-### Major Refactoring
-- **Directory Structure**: `.odd` (숨김 폴더)를 `odd` (일반 폴더)로 변경하여 접근성 향상.
-- **Install Script Update**: 폴더명 변경에 맞춰 `install.sh` 로직 수정 (Remote `odd` -> Local `.odd` Temp -> Target).
+## [v0.9.3] - 2025-12-26
 
-## v0.8.0 (2025-xx-xx)
-- **Release**: ODD v0.8.0 Standard Edition w/ Order Driven Development Core.
+### Changed
+- **Archive System**: Finalized archive and roadmap management logic (separating Tasks/Roadmaps).
+- **History System**: Split history into **System** (technical) and **Domain** (policy/context) for better traceability.
+- **Sync**: Synchronized `odd-template` with the latest operational standards.
 
-> *Note: This changelog is automatically curated from ODD System reports and Git history.*
+## [v0.9.2] - 2025-12-26
+
+### Changed
+- **Library Structure**: Refined `books/` into sub-folders (`general/`, `domain/`, `tech/`) for better organization.
+- **ATLAS**: Updated `ATLAS.md` with refined personas (Professor, Student, Librarian).
+- **Setup**: Updated `install.sh` to handle v0.9.2 folder structure.
+
+## [v0.9.1] - 2025-12-25
+
+### Changed
+- **System Core**: `Order` and `Progress` templates migrated from JSON to **Markdown + Frontmatter** for better readability.
+- **Documentation**: Renamed source `ATLAS.md` to `ATLAS_TEMPLATE.md` to avoid confusion with user's `docs/odd/ATLAS.md`.
+- **Scripts**: Updated `install.sh` to fetch `.md` templates and handle the new naming convention.
+
+### Added
+- **Templates**: Added standard templates for `Books` (`_template/book.md`) and `History` (`_template/history.md`).
+- **Guide**: Added README guide to `docs/specs` explaining specification folder structure.
+
+## [v0.9.0] - 2025-12-25
+
+### Added
+- Initial release of **ODD Starter Kit**.
+- **Core Structure**: `.odd` directory structure (hidden until installed).
+- **Scripts**: `install.sh` script to set up ODD environment in `docs/odd`.
+- **Docs**: `ATLAS.md`, `roadmap.md` and initial JSON templates for Order Driven Development.
