@@ -1,9 +1,9 @@
-# 🚀 ODD Starter Kit (v0.9.1 Standard Edition)
+# 🚀 ODD Starter Kit (v0.9.3 Standard Edition)
 
 > **[English] "Curing AI Amnesia in Software Development."**
 > **[한국어] "AI 개발의 기억 상실증을 치료하라."**
 >
-> **Order Driven Development (ODD) v0.9.1: Library & Atlas Framework**
+> **Order Driven Development (ODD) v0.9.3: Library & Atlas Framework**
 
 ---
 
@@ -16,7 +16,7 @@ Run the command below in your terminal to instantly set up the ODD system.
 어떠한 환경에서도 터미널에서 아래 명령어를 실행하면, 즉시 ODD 시스템이 구축됩니다.
 
 ```bash
-curl -sL https://raw.githubusercontent.com/imincheol/odd-starter/main/odd/setup/install.sh | bash
+curl -sL https://raw.githubusercontent.com/imincheol/odd-starter/main/docs/odd/setup/install.sh | bash
 ```
 
 *(Note: `docs/` folder will be created. Your existing data is safe.)*
@@ -25,16 +25,23 @@ curl -sL https://raw.githubusercontent.com/imincheol/odd-starter/main/odd/setup/
 docs/
 ├── odd/                # 🧠 Operation & Memory (The Brain)
 │   ├── ATLAS.md        #    - Single Source of Truth
-│   ├── roadmap.md      #    - Project Snapshot (Navigation)
-│   ├── tasks/          #    - Working Memory (Active Orders)
+│   ├── tasks/          #    - Working Memory (Roadmap & Active Orders)
+│   │   ├── roadmap.md  #    - Project Snapshot (Navigation)
+│   │   ├── active/     #    - Currently Processing Tasks
+│   │   └── _template/  #    - Order/Progress/Report Templates
 │   ├── books/          #    - Long-term Memory (Living Knowledge)
-│   ├── history/        #    - Chronicles (Immutable History)
+│   │   ├── general/    #    - Core Principles & UI/UX Policies
+│   │   ├── domain/     #    - Business Logic & Data Models
+│   │   └── tech/       #    - Tech Stack & Coding Standards
+│   ├── history/        #    - Chronicles (Immutable Delta)
+│   │   ├── system/     #    - Infrastructure & Refactoring Logs
+│   │   └── domain/     #    - Context & Policy Change Logs
 │   ├── archive/        #    - Storage (Completed Jobs)
-│   └── setup/          #    - Setup Scripts
+│   └── setup/          #    - Setup Scripts (install.sh)
 │
 └── specs/              # 🏛️ Product Specifications
     ├── README.md       #    - Product Overview
-    └── ...
+    └── ...             #    - Planning, Design, Dev Specs
 ```
 
 ---
@@ -72,9 +79,9 @@ Efficiency comes from clarity. Use generic personas to call the AI.
 
 | Context | Role | Purpose |
 | :--- | :--- | :--- |
-| **`@odd`** | **Worker (일꾼)** | "Start Task", "Check Progress" (Tasks, Roadmap) |
-| **`@library`** | **Wisdom (지식)** | "What is this?", "Check Tech Stack" (Books, Domain) |
-| **`@specs`** | **Truth (기준)** | "What is the requirement?" (Specifications) |
+| **`@odd`** | **Student (학생)** | "Start Task", "Check Progress" (Tasks, Roadmap) |
+| **`@library`** | **Librarian (사서)** | "Update Books", "Check Tech Stack" (Books, History) |
+| **`@specs`** | **Professor (교수)** | "Review Order", "Check Requirements" (Specifications) |
 
 ---
 
@@ -82,4 +89,4 @@ Efficiency comes from clarity. Use generic personas to call the AI.
 
 *   **Session Start**: Always load `ATLAS.md` and `roadmap.md` first.
 *   **Approve First**: Never let the AI code without an **Approved Order**.
-*   **Librarian**: The AI is also a librarian. Ask it to "Update the Books" after every task.
+*   **Librarian Update**: The Librarian is responsible for both **History (Immutable)** and **Books (Living Doc)** after every task.

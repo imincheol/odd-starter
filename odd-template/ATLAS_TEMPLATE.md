@@ -1,5 +1,5 @@
 # Project Atlas: The Single Source of Truth
-> **ODD System Version: v0.9.2**
+> **ODD System Version: v0.9.3**
 
 **[English]**
 This document is the **Constitution and Compass** of the ODD (Order-Driven Development) System.

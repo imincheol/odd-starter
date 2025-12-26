@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.9.3] - 2025-12-26
+
+### Changed
+- **Archive System**: Finalized archive and roadmap management logic (separating Tasks/Roadmaps).
+- **History System**: Split history into **System** (technical) and **Domain** (policy/context) for better traceability.
+- **Sync**: Synchronized `odd-template` with the latest operational standards.
+
+## [v0.9.2] - 2025-12-26
+
+### Changed
+- **Library Structure**: Refined `books/` into sub-folders (`general/`, `domain/`, `tech/`) for better organization.
+- **ATLAS**: Updated `ATLAS.md` with refined personas (Professor, Student, Librarian).
+- **Setup**: Updated `install.sh` to handle v0.9.2 folder structure.
+
 ## [v0.9.1] - 2025-12-25
 
 ### Changed
