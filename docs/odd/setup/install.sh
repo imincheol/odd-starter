@@ -6,6 +6,12 @@
 REPO_URL="https://raw.githubusercontent.com/imincheol/odd-starter/main"
 TEMPLATE_DIR="odd-template"
 
+# 0. [Check Environment] 신규 설치인지 업데이트인지 확인
+IS_UPDATE=false
+if [ -f "docs/odd/ATLAS.md" ]; then
+    IS_UPDATE=true
+fi
+
 echo "🚀 ODD 시스템 동기화 (v0.9.3)를 시작합니다..."
 
 # 1. [System] 필수 시스템 파일 존재 확인 및 원격 다운로드
@@ -88,4 +94,14 @@ if [ -f "docs/odd/setup/install.sh" ]; then
 fi
 
 echo "✨ 설치 및 업데이트가 완료되었습니다."
-echo "👉 docs/odd/ATLAS.md 를 열어 새로운 규칙(v0.9.3)을 확인하세요."
+
+if [ "$IS_UPDATE" = true ]; then
+    echo "🔄 [업데이트 완료] 시스템이 최신 버전(v0.9.3)으로 상향되었습니다."
+    echo "👉 변경 사항을 프로젝트에 반영하려면 docs/odd/setup/ODD_UPDATE.md 의 내용을 AI에게 전달하세요."
+else
+    echo "🆕 [신규 설치 완료] ODD 시스템이 성공적으로 구축되었습니다."
+    echo "👉 프로젝트를 시작하려면 docs/odd/setup/ODD_INIT.md 의 내용을 AI에게 전달하세요."
+fi
+
+echo ""
+echo "💡 Tip: docs/odd/ATLAS.md 를 열어 새로운 규칙(v0.9.3)을 확인할 수도 있습니다."
